@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Joel Herilando</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">JOEL HERILANDO</a>
+
+        <div id="menu-icon">☰</div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">ACCUEIL</a>
+            <a href="#about">APROPOS</a>
+            <a href="#services">COMPETENCE</a>
+            <a href="#projet">PROJET</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="joel.jpg" alt="joel">
+        </div>
+
+        <div class="home-content">
+            <h3>BONJOUR, je me présente</h3>
+            <h1><span>JOEL HERILANDO</span></h1>
+            <h3>et je suis <span class="multiple-text">web designer</span></h3>
+            <p>Je suis étudiant en première année en informatique <span>EMIT</span>. <br>
+            Passionné par le développement web. <br>
+            J'aime créer des pages web performantes, attirantes et bien structurées. <br>
+            Mon objectif est de devenir un développeur professionnel capable de créer des pages web grâce au code. <br>
+            <span>Je travaille avec détermination pour améliorer mes compétences en programmation et design d'applications web. 
+            <br>Curieux, motivé et discipliné, je cherche constamment à relever des défis.</span>
+            </p>
+            <a href="#" class="btn">Télécharger le portfolio</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Apropos de <span>moi</span></h2>
+            <h3>Je suis <span>web designer</span></h3>
+            <p>Je me présente : <span>REDONNE VOLAHANTA JOEL HERILANDO</span><br>
+               Je suis né le : <span>09/mai/2006 à <em>ANTANANARIVO</em></span><br>
+               Diplômes : <span>2017 CEPE, 2021 BEPC TECHNIQUE, BACC 2024 SERIE D</span><br>
+               Téléphone : <span>0347650973 / 0386064986</span><br>
+               Facebook : <span>Joel Rackle</span><br>
+               Email : <span>volahantajoel@gmail.com</span><br>
+               GitHub : <span>gitjoel25</span><br>
+               Adresse actuelle:<span>igaga tanambao</span><br>
+               Loisir:<span>
+                  football et lecture d'un livre
+               </span><br>
+               Competence linguistique:<span>Français et Anglais</span><br>
+               Formation professionen:<span>Madasophar Antananarivo</span></p>
+            <a href="#about" class="btn">Lire plus</a>
+        </div>
+        <div class="about-img">
+            <img src="joel1.jpg" alt="joel">
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading"><span>COMPETENCE WEB , BUREAUTIQUE et PROGRAMATION</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <h3>HTML ET CSS</h3>
+                <p>Je maîtrise les bases du HTML pour structurer correctement une page web et du CSS pour créer des designs modernes.</p>
+                <a href="#about" class="btn">Lire plus</a>
+            </div>
+            <div class="services-box">
+                <h3>EXCEL et ACCESS</h3>
+                <p>Compétences en Microsoft Excel pour la gestion de données et Microsoft Access pour les bases de données.</p>
+                <a href="#about" class="btn">Lire plus</a>
+            </div>
+            <div class="services-box">
+                <h3>LANGAGE C</h3>
+                <p>Connaissances en programmation C (variables, conditions, boucles et fonctions).</p>
+                <a href="#about" class="btn">Lire plus</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="projet" id="projet">
+        <div class="projet-box">
+            <h2 class="heading">PROJETS</h2>
+            <div class="wrapper">
+                <div class="projet-item">
+                    <img src="img3.png" alt="projet1">
+                    <h2>HTML & CSS</h2>
+                    <p>Mise en œuvre d'une page web complète.</p>
+                    <a href="prj.html" class="btn">Voir mon projet</a>
+                </div>
+                <div class="projet-item">
+                    <img src="ppp.png" alt="projet2">
+                    <h2>Gestion Cyclisme</h2>
+                    <p>Projet concernant la gestion des amateurs de cyclisme.</p>
+                    <a href="index2.html" class="btn">Voir mon projet</a>
+                </div>
+                <div class="projet-item">
+                    <img src="img.png" alt="projet3">
+                    <h2>Site Personnel</h2>
+                    <p>Création d'un site personnel pour pratiquer le code.</p>
+                    <a href="prj.html" class="btn">Voir mon  projet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contacter <span>JOEL HERILANDO</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Votre nom complet">
+                <input type="email" placeholder="Adresse email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Numéro téléphone">
+                <input type="text" placeholder="Sujet email">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Votre Message"></textarea>
+            <input type="submit" value="Envoyer le message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p class="copyright">
+            &copy; Cette page web est faite par JOEL HERILANDO / matricule: 043I26
+        </p>
+    </footer>
+
+    <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menuIcon.onclick = () => {
+            navbar.classList.toggle('active');
+        };
+
+        // Fermer le menu quand on clique sur un lien (utile pour le mobile)
+        let navLinks = document.querySelectorAll('.navbar a');
+        navLinks.forEach(link => {
+            link.onclick = () => {
+                navbar.classList.remove('active');
+            };
+        });
+    </script>
+</body>
+</html>
+/* Reset de base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+:root{
+    --bg-color:#081b29;
+    --snd-bg-color:#0c1d3c9c;
+    --text-color:#fff;
+    --main-color:rgb(33, 124, 139);
+    --vt-color:#f65e0c;
+}
+
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/* --- HEADER & NAVBAR --- */
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    background: var(--main-color);
+    backdrop-filter: blur(10px);
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: var(--bg-color);
+    font-weight: 700;
+        animation: floatImage 4s ease-in-out infinite;
+    transition: 0.4s ease;
+    
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--bg-color);
+    cursor: pointer;
+    display: none; /* Caché sur PC */
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--bg-color);
+    margin-left: 4rem;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover, .navbar a.active{
+    color: var(--text-color);
+}
+
+/* --- HOME SECTION --- */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.home-img img{
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    animation: floatImage 4s ease-in-out infinite;
+    transition: 0.4s ease;
+    
+
+}
+
+@keyframes floatImage {
+    0%{ transform: translateY(0); }
+    50% { transform: translateY(-2.4rem); }
+    100%{transform: translateY(0);}
+}
+
+.home-content h1 { font-size: 5.6rem; font-weight: 700; line-height: 1.3; }
+.home-content h3 { font-size: 3.2rem; font-weight: 700; }
+span { color: orangered; }
+.home-content p { font-size: 1.6rem; margin: 2rem 0; }
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    box-shadow: 0 0 1.6rem var(--main-color);
+    transform: scale(1.05);
+}
+
+/* --- ABOUT SECTION --- */
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.about-img img{
+    width: 25vw;
+    border-radius: 2rem;
+    box-shadow: 0 0 25px var(--main-color);
+animation: floatImage 4s ease-in-out infinite;
+    transition: 0.4s ease;
+}
+
+.heading{
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: floatImage 4s ease-in-out infinite;
+    transition: 0.4s ease;home-
+    
+    
+}
+
+.about-content h3 { font-size: 2.8rem; }
+.about-content p { font-size: 1.6rem; margin: 2rem 0; line-height: 1.6; }
+
+/* --- SERVICES SECTION --- */
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-box{
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--vt-color);
+    transition: 0.4s ease;
+}
+
+.services-box:hover{
+    border-color: var(--main-color);
+    transform: translateY(-1rem);
+}
+
+/* --- PROJET SECTION --- */
+.projet { background: var(--snd-bg-color); }
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.projet-item{
+    background: var(--bg-color);
+    padding: 2.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.3rem solid transparent;
+    transition: 0.3s ease;
+}
+
+.projet-item img { width: 100%; border-radius: 1.5rem; margin-bottom: 1rem; }
+.projet-item:hover { border-color: var(--main-color); }
+
+/* --- CONTACT SECTION --- */
+.contact form{
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input, .contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--snd-bg-color);
+    border-radius: 0.8rem;
+    margin: 0.8rem 0;
+}
+
+.contact form .input-box input { width: 49%; }
+
+/* --- FOOTER --- */
+footer{
+    padding: 2rem 9%;
+    background: var(--snd-bg-color);
+    text-align: center;
+}
+
+/* --- RESPONSIVE (MOBILE) --- */
+
+@media (max-width: 991px) {
+    #menu-icon {
+        display: block; /* Affiche le bouton menu */
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%; /* Cache le menu par défaut */
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--main-color);
+        transition: 0.4s ease;
+    }
+
+    .navbar.active {
+        left: 0; /* Affiche le menu quand cliqué */
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--bg-color);
+    }
+
+    .home { flex-direction: column; }
+    .home-content h1 { font-size: 4.5rem; }
+    .home-img img { width: 70vw; margin-top: 4rem; }
+
+    .about { flex-direction: column-reverse; }
+    .about-img img { width: 70vw; }
+
+    .wrapper { grid-template-columns: 1fr; } /* Projets sur une seule colonne */
+    .contact form .input-box input { width: 100%; }
+}
+
+@media (max-width: 617px) {
+    html { font-size: 50%; } /* Réduit la taille globale sur très petits écrans */
+}
+
